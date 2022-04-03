@@ -1,0 +1,31 @@
+%% The ``\maketitle'' command must be the first command after the
+%% ``\begin{document}'' command. It prepares and prints the title block.
+	
+%% the only exception to this rule is the \firstsection command
+%% \section{Introduction} %for journal use above \firstsection{..} instead
+	
+	
+\section{Introduction}
+
+
+%在诸如小说、电影、推特话题和电子邮件中，都有由一个或多个事件组成的脉络清晰、层次分明的故事。故事是在时间上或因果关系上相关的一系列事件的总称。事件则可以描述为，实体之间在不同的时间段内的相互作用。实体之间的交互形成了事件，不同事件前后衔接组成了故事。通过探索实体间的互动模式，可以让我们更好地掌握实体之间的关系，发现实体的功能，同时也能促进理解单一事件、探索前后事件的联系以及了解整个故事。
+\noindent In such things as novels, movies, Twitter threads, and emails, there are well-paced, layered stories made up of one or more events. A story is an umbrella term for a series of events that are related in time or causality. Events, on the other hand, can be described as interactions between entities over different time periods. The interactions between entities form events, and the back-and-forth of different events make up the story. By exploring the patterns of interactions between entities, we can get a better grasp of the relationships between entities and discover the functions of entities, as well as facilitate the understanding of single events, explore the connections between preceding and following events, and understand the whole story.
+
+%对如何展示故事中各个实体之间动态关系的任务来说，除了要尽可能多的表达信息外，展示方式的简洁直观也是十分重要的。故事线可视化以其简约性、直观性和有效性，常被用来展示故事发展趋势和分析实体之间的关系。其被人们所熟知的形式，在最初Munroe手绘的电影叙事图中就已经有所体现——故事由左往右发展，使用线的形式对实体进行编码，实体间有关系则会聚集在一起。
+For the task of how to show the dynamic relationships between entities in a story, in addition to expressing as much information as possible, it is important that the presentation be simple and intuitive. With its simplicity, immediacy and effectiveness, storyline visualization is often used to show story trends and analyze the relationships between entities. Its familiar form is reflected in the original Munroe~\cite{r_movie_nodate} hand-drawn film narrative diagrams - the story develops from left to right, using the form of lines to encode entities, with relationships between them clustered together.
+
+%现有对故事线可视化进行研究的工作方向大致可以分为三类。一部分提出了通用的设计需求和优化目标。这些同样适用在其他领域的时序数据的展示。也有一部分工作对布局优化算法的性能、算法可靠性等进行分析。还有一部分对故事线可视化的设计空间做了探讨。但这些工作把注意力放在故事的大致趋势的展现上。尽管通过实体的聚集和分散，用户可以了解每个实体在整个故事中的一些行为模式。但用户无法得知特定情况下，比如某个事件中或某个时刻，实体的具体行为。因此，我们认为，在展示故事大致趋势时，应该兼顾展示实体之间的关系。
+The orientation of existing work on storyline visualization can be broadly divided into three categories. One part proposes generic design requirements and optimization goals. These are equally applicable to the presentation of temporal data in other domains. There is also a part of the work that analyzes the performance of layout optimization algorithms, algorithm reliability, etc. There is also a part that explores the design space for story line visualization. However, these works focus their attention on the presentation of the general trends of the stories. Although through the aggregation and dispersion of entities, users can understand some behavior patterns of each entity in the overall story. However, users cannot know the specific behavior of entities in a given situation, such as during an event or at a moment in time. Therefore, we believe that the presentation of the general trend of the story should be balanced with the presentation of the relationships between the entities.
+
+%实体和实体之间的关系，可以用节点链接图来表示。但是节点链接图不适合与故事线可视化结合，因为会产生非常复杂的结构，不易理解与阅读。另一种可视化形式是邻接矩阵。传统的将实体描述为行和列的邻接矩阵，会丢失时间信息。虽然有部分工作将矩阵与时间线结合，但其布局仍旧复杂。我们提出了一种新的适用于故事线可视化中实体与实体间关系展示的可视化表现。我们将时间描述为矩阵的行，实体描述为矩阵的列。矩阵中某列有颜色的两个单元格表示两个实体之间存在关系。这种设计与故事线可视化的通用形式相契合。
+The relationships between entities and entities are often drawn using node-link diagrams. But node-link diagrams are not suitable for visualization in combination with timelines. The combination of the two produces a very complex structure that is not easy to understand and read. Another form of graph visualization is the adjacency matrix. Traditionally, vertices are described as adjacency matrices of rows and columns, which can lose the temporal information of the behavior. For this reason, we propose a new visual representation applicable to the display of entity-entity relationships in storylines. We describe time as the rows of the matrix and entities as the columns of the matrix. Two cells in a column of the matrix with color indicate the existence of a relationship between two entities.
+
+%具体来说，我们的工作有以下几个贡献。
+Specifically, the contributions of our work are as follows.
+
+%一种新的更多细节展示的故事线可视化形式。引入事件和实体与实体间关系，增加了信息表达的数量和质量量。
+$\bullet$ A novel and more detailed form of storyline. Introducing events and entity-to-entity relationships increases the quantity and quality of information presented.
+
+%一种有效的多目标优化算法，结合多种设计需求，创建简洁直观的故事线布局。
+$\bullet$ An effective multi-objective optimization algorithm that combines multiple design requirements to create clean and intuitive storyline layouts.
+
